@@ -39,14 +39,11 @@ int main(int argc, char* argv[]){
 
             exit(0);
         }
-        else if(i == CHILDREN_COUNT){
-            int status;
-            while(wait(&status) != -1);
-            fprintf(f, "Parent File Position Indicator: %ld\n\n", ftell(f));
-        }
     }
 
-    
+    int status;
+    while(wait(&status) != -1);
+    fprintf(f, "Parent File Position Indicator: %ld\n\n", ftell(f)); 
 
     fclose(f);
 
