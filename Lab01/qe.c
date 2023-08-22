@@ -9,7 +9,7 @@
 
 #define CHILDREN_COUNT 50
 #define ZOMBIE_INDEX 2
-#define SLEEP_DURATION 5
+#define SLEEP_DURATION 10
 
 int main(int argc, char* argv[]){
     if(argc != 2){
