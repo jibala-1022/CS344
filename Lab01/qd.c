@@ -46,13 +46,17 @@ int main(int argc, char* argv[]){
         if(i==1 || i==3 || i==5 || i==7 || i==9){
             pids[i/2] = pid;
         }
-    }
 
-    for(int j=0; j<5; j++){
-        waitpid(pids[j], NULL, 0);
+        if(i == CHILDREN_COUNT){
+            for(int j=0; j<5; j++){
+                waitpid(pids[j], NULL, 0);
+            }
+            break;
+        }
     }
 
     fprintf(f, "Parent File Position Indicator: %ld\n\n", ftell(f));
+    
 
     fclose(f);
 

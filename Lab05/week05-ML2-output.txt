@@ -1,0 +1,8 @@
+printf("Gambhir b Bolt 22 36");
+printf("Sehwag b Bracewell 47 41");
+printf("Pujara * 133 254");
+printf("Tendulkar b Boult 19 62");
+printf("Kohli b Martin 58 107");
+printf("Raina b Patel 3 13");
+printf("Dhoni * 43 87");
+
